@@ -1,0 +1,4 @@
+# Add to .prettierignore
+public/pagefind*.js
+public/_pagefind/
+out/_pagefind/

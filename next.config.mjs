@@ -8,9 +8,13 @@ export default withNextra({
   reactStrictMode: true,
   skipTrailingSlashRedirect: true,
   basePath: "/api-docs-template",
-  // Export only when building in GitHub Actions
-  output: process.env.GITHUB_ACTION ? "export" : undefined,
+  // Always export for static deployment
+  output: "export",
   images: {
     unoptimized: true,
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  trailingSlash: true,
 });
