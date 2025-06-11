@@ -7,7 +7,6 @@ const withNextra = nextra({
 export default withNextra({
   reactStrictMode: true,
   skipTrailingSlashRedirect: true,
-  basePath: "/api-docs-template",
   // Always export for static deployment
   output: "export",
   images: {
